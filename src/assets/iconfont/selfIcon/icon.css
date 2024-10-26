@@ -1,0 +1,46 @@
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  /* cursor: pointer; */
+}
+
+.icon-big {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.lapa.lapaIcon {
+  font-size: 14px;
+}
+
+.lapa.icon-tishi {
+  color: #F56C6C;
+  cursor: pointer;
+}
+
+.lapa.blueIcon {
+  color: #409EFF;
+  cursor: pointer;
+}
+
+.lapa.redIcon {
+  color: #F56C6C;
+  cursor: pointer;
+}
+
+.lapa.listIcon {
+  line-height: 24px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.lapa.replenIcon {
+  font-size: 12px;
+}

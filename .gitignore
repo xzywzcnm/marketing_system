@@ -1,0 +1,25 @@
+node_modules
+.DS_Store
+.vscode
+node_modules/
+/dist/
+/doc/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock*
+
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.rar
+*.zip
+/dist
+marketing
+
+!marketing.zip

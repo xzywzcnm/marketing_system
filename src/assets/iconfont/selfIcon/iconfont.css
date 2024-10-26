@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "lapa"; /* Project id 2858829 */
+  src: url('iconfont.woff2?t=1701929445779') format('woff2'),
+       url('iconfont.woff?t=1701929445779') format('woff'),
+       url('iconfont.ttf?t=1701929445779') format('truetype');
+}
+
+.lapa {
+  font-family: "lapa" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tihuan:before {
+  content: "\e6af";
+}
+
+.icon-jianshao:before {
+  content: "\e8c5";
+}
+
+.icon-zengjia:before {
+  content: "\e8c8";
+}
+
+.icon-up_7:before {
+  content: "\e65a";
+}
+
+.icon-otto:before {
+  content: "\e68a";
+}
+
+.icon-bianji1:before {
+  content: "\e62b";
+}
+
+.icon-xiugaijiage:before {
+  content: "\e666";
+}
+
+.icon-tiktok:before {
+  content: "\e604";
+}
+
+.icon-bangzhu:before {
+  content: "\e603";
+}
+
+.icon-aliexpress:before {
+  content: "\e6ef";
+}
+
+.icon-huaban:before {
+  content: "\e637";
+}
+
+.icon-xiazaidaoru:before {
+  content: "\e8c6";
+}
+
+.icon-msg:before {
+  content: "\e617";
+}
+
+.icon-temu:before {
+  content: "\e611";
+}
+
+.icon-FR:before {
+  content: "\e794";
+}
+
+.icon-DE:before {
+  content: "\e7a5";
+}
+
+.icon-BR:before {
+  content: "\e7a8";
+}
+
+.icon-IT:before {
+  content: "\e7c9";
+}
+
+.icon-US:before {
+  content: "\e7eb";
+}
+
+.icon-PL:before {
+  content: "\e60c";
+}
+
+.icon-RU:before {
+  content: "\e60e";
+}
+
+.icon-UK:before {
+  content: "\e614";
+}
+
+.icon-jinggao:before {
+  content: "\e602";
+}
+
+.icon-santiaoxian:before {
+  content: "\e6b9";
+}
+
+.icon-chilun:before {
+  content: "\e600";
+}
+
+.icon-tishi:before {
+  content: "\e657";
+}
+
+.icon-caozuorizhi:before {
+  content: "\e6ad";
+}
+
+.icon-fanhui:before {
+  content: "\e67a";
+}
+
+.icon-yanjing:before {
+  content: "\e8bf";
+}
+
+.icon-yingyong:before {
+  content: "\e60d";
+}
+
+.icon-bianji:before {
+  content: "\e60b";
+}
+
+.icon-jiangxu:before {
+  content: "\e65e";
+}
+
+.icon-shengxu:before {
+  content: "\e65f";
+}
+
+.icon-walmart:before {
+  content: "\e669";
+}
+
+.icon-ebay:before {
+  content: "\e793";
+}
+
+.icon-yonghu:before {
+  content: "\e63d";
+}
+
+.icon-similarproduct:before {
+  content: "\e6f6";
+}
+
+.icon-dianpuguanli:before {
+  content: "\e601";
+}
+
+.icon-product:before {
+  content: "\e75d";
+}
+
+.icon-Icon-jinyong:before {
+  content: "\e60a";
+}
+
+.icon-qiyong:before {
+  content: "\e613";
+}
+
+.icon-AU:before {
+  content: "\e609";
+}
+
+.icon-UA:before {
+  content: "\e618";
+}
+

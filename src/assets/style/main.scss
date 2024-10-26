@@ -1,0 +1,829 @@
+/*
+ * 本样式文件主要写公用样式
+ */
+@import "./reset.scss";
+@import "./variables.scss";
+
+#app {
+  height: 100%;
+  width: 100%;
+  color: $c-default-font;
+
+  // symbol图标样式
+  .svg-container {
+    width: 60px;
+    text-align: center;
+    display: block;
+  }
+
+  // 文本省略号
+  .text-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  // 文本居中
+  .text-center {
+    text-align: center;
+  }
+
+  // 文本不换行
+  .text-nowarp {
+    white-space: nowrap;
+  }
+
+  // 表单样式
+  .el-form-item {
+    &.is-success {
+
+      .el-input__inner,
+      .el-textarea__inner {
+        border-color: #dcdfe6;
+      }
+
+      .el-input__inner:focus,
+      .el-textarea__inner:focus {
+        border-color: #409eff;
+      }
+    }
+  }
+
+  // 外边距
+  .mt4 {
+    margin-top: 4px;
+  }
+
+  .mt6 {
+    margin-top: 6px;
+  }
+
+  .mt10 {
+    margin-top: 10px;
+  }
+
+  .mt15 {
+    margin-top: 15px;
+  }
+
+  .mt20 {
+    margin-top: 20px;
+  }
+
+  .mb4 {
+    margin-bottom: 4px;
+  }
+
+  .mb6 {
+    margin-bottom: 6px;
+  }
+
+  .mb10 {
+    margin-bottom: 10px;
+  }
+
+  .mb15 {
+    margin-bottom: 15px;
+  }
+
+  .mb20 {
+    margin-bottom: 20px;
+  }
+
+  .ml2 {
+    margin-left: 2px;
+  }
+
+  .ml6 {
+    margin-left: 6px;
+  }
+
+  .ml10 {
+    margin-left: 10px;
+  }
+
+  .ml15 {
+    margin-left: 15px;
+  }
+
+  .ml20 {
+    margin-left: 20px;
+  }
+
+  .mr10 {
+    margin-right: 10px;
+  }
+
+  .mr4 {
+    margin-right: 4px;
+  }
+
+  .mr15 {
+    margin-right: 15px;
+  }
+
+  .mr20 {
+    margin-right: 20px;
+  }
+
+  // 内边距
+  .pt10 {
+    padding-top: 10px;
+  }
+
+  .pt15 {
+    padding-top: 15px;
+  }
+
+  .pt20 {
+    padding-top: 20px;
+  }
+
+  .pb10 {
+    padding-bottom: 10px;
+  }
+
+  .pb15 {
+    padding-bottom: 15px;
+  }
+
+  .pb20 {
+    padding-bottom: 20px;
+  }
+
+  .pl10 {
+    padding-left: 10px;
+  }
+
+  .pl15 {
+    padding-left: 15px;
+  }
+
+  .pl20 {
+    padding-left: 20px;
+  }
+
+  .pr10 {
+    padding-right: 20px;
+  }
+
+  .pr15 {
+    padding-right: 15px;
+  }
+
+  .pr20 {
+    padding-right: 20px;
+  }
+
+  .plr10 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  // flex
+  .flexAllcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .flex-align {
+    display: flex;
+    align-items: center;
+  }
+
+  // 公用页面主块
+  .page-main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  // 查询表单
+  .search-content {
+    background-color: #fff;
+    padding: 10px 10px 2px 10px;
+  }
+
+  // 搜索表单
+  .form-search {
+    // max-width: 1500px;
+
+    .el-form-item__content,
+    .el-select,
+    .el-date-editor {
+      width: 240px;
+    }
+
+
+    .formWidth300 {
+
+      .el-form-item__content,
+      .el-select,
+      .el-date-editor {
+        width: 300px;
+      }
+    }
+
+    .el-cascader {
+      width: 100%;
+    }
+
+    .no-form-item {
+      .el-form-item__content {
+        width: auto;
+      }
+    }
+
+    .el-form-item {
+      margin-bottom: 10px;
+    }
+
+    .el-date-editor .el-range-input {
+      width: 100%;
+    }
+
+    .el-select .el-tag {
+      max-width: 150px;
+    }
+
+    .el-form-item__error {
+      top: 90%;
+    }
+  }
+
+  // 详情表单展示
+  .detail-form {
+
+    .el-form-item__content,
+    .el-form-item__label {
+      line-height: 20px;
+    }
+  }
+
+  // 排序
+  .operator-sort {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    // 更改下拉菜单禁用状态的字体颜色为白色
+    .el-dropdown [disabled] {
+      color: #fff;
+    }
+  }
+
+  // 表格内容
+  .mainContent {
+    padding: 0 0 10px 0;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    // 限制表格最高高度600px
+    .table-maxheight {
+      flex: 1;
+      overflow: hidden;
+
+      .el-table .el-table__body-wrapper {
+        // max-height: 559px !important;
+      }
+
+      // 解决fixed，固定栏高度计算不准确的问题
+      .el-table__fixed {
+        height: 100% !important;
+
+        .el-table__fixed-body-wrapper {
+          height: auto !important;
+          bottom: 0 !important;
+        }
+      }
+
+      // fixed时，出现横滚动条 滚动条高度17px
+      .el-table--scrollable-x {
+        .el-table__fixed-body-wrapper {
+          bottom: 17px !important;
+        }
+      }
+
+      // .el-table__fixed,
+      // .el-table__fixed-right {
+      //   height: 100% !important;
+      // }
+
+      // .el-table__fixed-body-wrapper {
+      //   height: 100% !important;
+      // }
+
+      // .el-table__fixed-body-wrapper .el-table__body {
+      //   padding-bottom: 17px; // 滚动条高度
+      // }
+    }
+
+    .el-pagination {
+      text-align: right;
+      padding-top: 10px;
+      padding-right: 10px;
+    }
+
+    .el-link--inner {
+      font-size: 12px;
+    }
+
+    // 修改表格头部高度
+    .el-table__cell {
+      padding: 6px 0;
+    }
+
+    .el-table .el-table__body .cell {
+      line-height: 16px;
+    }
+
+    // 平台样式
+    .alink {
+      color: #409eff;
+      cursor: pointer;
+      text-decoration: underline;
+
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+    }
+
+    .itemid {
+      flex: 1;
+      font-size: 12px;
+      color: #409eff;
+      cursor: pointer;
+    }
+
+    .plant-icon {
+      width: 107px;
+      height: 42px;
+    }
+  }
+
+  // 适量宽度的滚动条
+  .width-scroll,
+  .el-dialog__body {
+
+    // 滚动条样式
+    &::-webkit-scrollbar {
+      /*滚动条整体样式*/
+      width: 5px;
+      /*高宽分别对应横竖滚动条的尺寸*/
+      height: 1px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      /*滚动条里面小方块*/
+      border-radius: 5px;
+      box-shadow: inset 0 0 5px #ccc;
+      background: #ccc;
+    }
+
+    &::-webkit-scrollbar-track {
+      /*滚动条里面轨道*/
+      box-shadow: inset 0 0 5px #ccc;
+      border-radius: 0px;
+      background: #ededed;
+    }
+  }
+
+  // 表单下边距
+  .formb0 {
+    .el-form-item {
+      margin-bottom: 0;
+    }
+  }
+
+  // 修改整体elementui的字体颜色
+  .el-form .el-form-item__label,
+  .el-table thead,
+  .el-button--default,
+  .el-table,
+  .el-pagination,
+  .el-pagination__total,
+  .el-input__inner,
+  .el-pagination__jump {
+    color: $c-default-font;
+  }
+
+  .el-table {
+    th {
+      background: #f8f8f9;
+    }
+  }
+
+  // 表格背景
+  .tableWrap {
+    .el-loading-mask {
+      background-image: url("../images/table_loding.gif");
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: center;
+
+      // background-size: 428px auto;
+      .el-loading-spinner {
+        display: none;
+      }
+    }
+
+    .el-table__body-wrapper {
+      position: static;
+    }
+
+    .el-table__empty-text {
+      position: absolute;
+      top: 40px;
+      bottom: 14px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: 320px auto;
+      background-repeat: no-repeat;
+      background-position: center center;
+      color: rgba(255, 255, 255, 0);
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .nosearch .el-table__empty-text {
+      background-image: url("../images/search.png");
+    }
+
+    .nolength .el-table__empty-text {
+      background-image: url("../images/nullength.png");
+    }
+  }
+
+  // 下划线
+  .underline {
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+  }
+
+  .primaryColor {
+    color: #409eff;
+  }
+
+  .errorColor {
+    color: #F56C6C;
+  }
+
+  // 高亮可点击无下划线
+  .no-undeline {
+    color: #409eff;
+    cursor: pointer;
+  }
+
+  // tab页
+  .tabPage {
+    background-color: #f3f3f3;
+    padding: 0 10px;
+
+    .el-tabs {
+      flex: 1;
+      overflow: hidden;
+      background-color: #fff;
+      margin-top: 10px;
+      padding: 0 10px;
+      display: flex;
+      flex-direction: column;
+
+      .el-tabs__header {
+        margin-bottom: 6px;
+      }
+
+      .el-tabs__content {
+        flex: 1;
+        overflow: hidden;
+
+        .el-tab-pane {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  // 表单内区间样式
+  .differ {
+    .el-input {
+      height: 32px;
+      line-height: 31px;
+
+      .el-input__inner {
+        height: inherit;
+        line-height: inherit;
+      }
+    }
+
+    .el-form-item {
+      margin: 0;
+    }
+
+    .flexSpan {
+      margin: 0 4px;
+    }
+
+    .noborderForm .el-input__inner {
+      border-radius: 3px 0 0 3px;
+    }
+
+    .btnStyle {
+      border-radius: 0 3px 3px 0;
+      border-left: 0;
+      padding: 9px;
+
+      &,
+      &:hover,
+      &:active {
+        background: transparent;
+        border-color: #dcdfe6;
+      }
+    }
+  }
+
+  // 高亮样式，非点击
+  .highLine {
+    color: $c-main;
+    word-break: break-all;
+  }
+
+  // 高亮样式，点击
+  .highCursor {
+    color: $c-main;
+    word-break: break-all;
+    cursor: pointer;
+  }
+
+  .mt4Content {
+    &>span {
+      display: inline-block;
+    }
+
+    &>div:not(:last-child),
+    &>span:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+// 认证中心 样式
+.again-login-body {
+  #app {
+    filter: blur(5px);
+  }
+
+  .mk_model {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .mk_model_main {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px 10px;
+      min-width: 420px;
+    }
+  }
+}
+
+.formError {
+
+  .el-form-item.is-error .el-input__inner,
+  .el-form-item.is-error .el-input__inner:focus,
+  .el-form-item.is-error .el-textarea__inner,
+  .el-form-item.is-error .el-textarea__inner:focus {
+    border-color: #f56c6c !important;
+  }
+}
+
+.flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.alignItemCenter {
+  align-items: center;
+}
+
+.alignItemEnd {
+  align-items: flex-end;
+}
+
+.spaceAround {
+  justify-content: space-around;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.wordflexCenter {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+// 弹框内容
+.appendBodyDialog.el-dialog__wrapper,
+.dialog-content .el-dialog__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .el-dialog {
+    margin: 0 !important;
+  }
+
+  .el-dialog {
+    margin: 0 !important;
+  }
+
+  .el-dialog__header {
+    padding: 14px 20px;
+    position: relative;
+    border-bottom: 1px solid #dcdee2;
+
+    .el-dialog__title {
+      font-size: 16px;
+      line-height: 22px;
+      display: inline-block;
+    }
+
+    .el-dialog__headerbtn {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .el-dialog__footer {
+    padding: 10px;
+  }
+
+  .el-dialog__body {
+    min-height: 200px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 10px;
+  }
+}
+
+// 重新登录弹窗样式设置
+.el-message-box.again-login-content {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  .el-message-box__content {
+    margin: 0;
+    padding: 0;
+
+    .el-message-box__message {
+      p {
+        line-height: normal;
+      }
+    }
+  }
+
+  .el-message-box__btns,
+  .el-message-box__header {
+    display: none;
+  }
+}
+
+// 表格时间宽度限制
+.timeWidth {
+  width: 70px;
+  display: inline-block;
+
+  >div {
+    min-height: 32px;
+  }
+}
+
+// 文本复制
+.clipContent {
+  display: flex;
+
+  .clipText {
+    word-break: break-all;
+  }
+
+  .clipIcon {
+    margin-left: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 4px;
+  }
+}
+
+// 无固定高度弹框高度
+.dialogAutoHeight {
+  .el-dialog__body {
+    min-height: auto !important;
+  }
+}
+
+// 警告颜色
+.errorTips {
+  color: $c-error;
+  padding: 0 4px;
+}
+
+// select 解决多选超出框问题
+.wareStyle {
+  .el-select__tags {
+    display: flex;
+    flex-wrap: nowrap;
+
+    >span {
+      display: flex;
+      max-width: 100%;
+
+      .el-tag:nth-child(1) {
+        max-width: 100%;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .el-input__inner {
+    padding-right: 25px;
+  }
+
+  .el-input__suffix {
+    right: 0;
+  }
+}
+
+.flex-jcCenter {
+  justify-content: center;
+}
+
+// 紫色tag标签
+.purpleTag {
+  color: #e02ef5;
+  border-color: #fce4ff;
+  background-color: #faebfb;
+}
+
+// 滚动条样式
+.scrollbar {
+  &::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 1px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 1px;
+    box-shadow: inset 0 0 5px #ccc;
+    background: #ccc;
+  }
+
+  &::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px #ccc;
+    border-radius: 0px;
+    background: #ededed;
+  }
+}
